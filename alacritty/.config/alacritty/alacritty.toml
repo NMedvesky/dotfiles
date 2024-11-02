@@ -1,0 +1,39 @@
+# [shell]
+# program = "/bin/zsh"
+# args = ["-l", "-c", "tmux attach || tmux"]
+
+[env]
+term = "xterm-256color"
+
+[window]
+dynamic_padding = true
+decorations = "Buttonless"
+opacity = 0.9
+startup_mode = "Maximized"
+option_as_alt = "Both"
+
+[font]
+# normal = { family = "MesloLGLDZ Nerd Font", style = "Regular" }
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+size = 15
+offset = { x = 0, y = 2 }
+
+[colors]
+cursor = { text = "#000000", cursor = "#38ff9c" }
+
+[colors.primary]
+foreground = "#ebddf4"
+background = "#010b17"
+
+[colors.normal]
+black = "#0b3b61"
+red = "#ff3a3a"
+green = "#52ffcf"
+yellow = "#fff383"
+blue = "#1376f8"
+magenta = "#c792ea"
+cyan = "#7FFFD4"
+white = "#15fca2"
+
+[cursor]
+vi_mode_style = { shape = "Beam" }
