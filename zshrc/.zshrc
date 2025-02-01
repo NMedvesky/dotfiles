@@ -5,7 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Where zinit and plugins are stored
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
@@ -47,9 +47,9 @@ bindkey '^n' history-search-forward
 bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
 
-source "$HOME/.config/zsh/aliases.zsh"
-source "$HOME/.config/zsh/exports.zsh"
-source "$HOME/.secrets/envKeys.zsh"
+source "$HOME/.config/zshrc/aliases.zsh"
+source "$HOME/.config/zshrc/exports.zsh"
+# source "$HOME/.secrets/envKeys.zsh"
 
 # History
 HISTSIZE=5000
@@ -73,21 +73,9 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 eval "$(thefuck --alias)"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh" ]; then
-        . "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/homebrew/Caskroom/miniforge/base/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 
+export PATH="/home/niko/.cargo/bin:$PATH"

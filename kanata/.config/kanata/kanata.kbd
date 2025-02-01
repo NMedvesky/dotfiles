@@ -1,0 +1,143 @@
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defsrc
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt menu rctl
+  mlft mrgt
+)
+
+(deflayer ergo
+  @lq  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  caps q    @tw  @te  r    t    y    u    i    o    p    [    ]    \
+  esc  @ta  @ts  @td  @tf  g    h    @tj  @tk  @tl  @trt bspc ret
+ @hsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           @tspc          ralt menu lrld
+  mlft mrgt
+)
+
+
+(deflayer symbols
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  `    <    @sra @sdq @sht @san [    @slp @slb @sat [    ]    \
+  spc  @sas -    /    =    +    @sus @sco ;    @spt @sds bspc ret
+  lsft @sxm @sca \    '    @spp @std ]    @srp @srb @sqm rsft
+  lctl lmet lalt           _              ralt menu rctl
+  _ _
+)
+
+#|
+(deflayer symbols
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  `    <    >    "    #    &    [    (    {    @    [    ]    \
+  spc  *    -    /    =    +    _    :    ;    %    $    bspc ret
+  lsft !    ^    \    '    |    ~    ]    )    }    ?    rsft
+  lctl lmet lalt           _              ralt menu rctl
+  _ _
+)
+|#
+
+(deflayer navigation
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    home pgdn pgup end  _    _    _    _
+  _    _    _    _    _    _    left down up  right _    _    _
+  _    _    _    _    _    _    del  tab  _    _    _    _
+  _    _    _              _              _    _    _
+  _    _
+)
+
+(deflayer function
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    f12  f7   f8   f9   _    _    _    _
+  _    _    _    _    _    _    f11  f4   f5   f6   _    _    _
+  _    _    _    _    _    _    f10  f1   f2   f3   _    _
+  _    _    _              _              _    _    _
+  _    _
+)
+
+
+(deflayer qwerty
+  @le  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt menu rctl
+  mlft mrgt
+)
+
+(defvar
+  tap-timeout   200
+  hold-timeout  200
+  tt $tap-timeout
+  ht $hold-timeout
+)
+
+(defalias
+  ;; Switch Layer
+  le (layer-switch ergo)
+  lq (layer-switch qwerty)
+
+  ;; Mod Keys
+  tw (tap-hold $tt $ht w (layer-while-held function))
+  te (tap-hold $tt $ht e (layer-while-held navigation))
+
+  tr (tap-hold $tt $ht r rsft)
+  tu (tap-hold $tt $ht u rsft)
+
+  ta (tap-hold $tt $ht a lalt)
+  ts (tap-hold $tt $ht s lmet)
+  td (tap-hold $tt $ht d lctl)
+  tf (tap-hold $tt $ht f lsft)
+
+  tj (tap-hold $tt $ht j rsft)
+  tk (tap-hold $tt $ht k rctl)
+  tl (tap-hold $tt $ht l rmet)
+  trt (tap-hold $tt $ht ret ralt)
+
+  hsft (tap-hold $tt $ht tab lsft)
+  tspc (tap-hold $tt $ht spc (layer-while-held symbols))
+
+  ;; Symbols
+  ;; sra (unicode ">")
+  sra S-.
+  ;; sdq (unicode r#"""#)
+  sdq S-'
+  ;; slp (unicode "(")
+  slp S-9
+  ;; srp (unicode ")")
+  srp S-0
+  ;; slb (unicode "{")
+  slb S-[
+  ;; srb (unicode "}")
+  srb S-]
+  ;; sht (unicode "#")
+  sht S-3
+  ;; san (unicode "&")
+  san S-7
+  ;; sat (unicode "@")
+  sat S-2
+  ;; sas (unicode "*")
+  sas S-8
+  ;; sus (unicode "_")
+  sus S--
+  ;; sco (unicode ":")
+  sco S-;
+  ;; spt (unicode "%")
+  spt S-5
+  ;; sds (unicode "$")
+  sds S-4
+  ;; sxm (unicode "!")
+  sxm S-1
+  ;; sca (unicode "^")
+  sca S-6
+  ;; spp (unicode "|")
+  spp S-\
+  ;; std (unicode "~")
+  std S-`
+  ;; sqm (unicode "?")
+  sqm S-/
+)
