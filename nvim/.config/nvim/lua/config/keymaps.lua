@@ -11,10 +11,13 @@ vim.keymap.set("n", "<BS>", "^", { desc = "Move to the first non-black character
 vim.keymap.set("n", "x", "\"_x")
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
+-- yank to system clipboard
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
 
+-- copy
+-- vim.keymap.set("n", "yc", "\"+y")
 
 
 -- vim.keymap.set("n", "<leader>d", "\"_d")

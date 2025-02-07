@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+
+Name=Neorg
+Exec=/usr/bin/nvim -c "Neorg journal"
+Terminal=true
+Icon=preferences-desktop
+
+Categories=Utility;TextEditor;
+Keywords=nvim;neorg;notes;text;editor
+
+NoDisplay=false
