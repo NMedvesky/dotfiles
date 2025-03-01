@@ -14,6 +14,7 @@ export CRYPTOGRAPHY_OPENSSL_NO_LEGACY='1'
 export PASSWORD_STORE_ENABLE_EXTENSIONS=true
 
 export PATH="$PATH:$HOME/Library/Application Support/itch/apps/butler"
+export PATH=/home/niko/.surrealdb:$PATH
 
 # Rust/Cargo
 RUSTC_WRAPPER=sccache
