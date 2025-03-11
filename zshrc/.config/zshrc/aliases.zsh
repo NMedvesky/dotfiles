@@ -17,6 +17,9 @@ alias cow='fortune | cowsay | lolcat'
 alias vpn='~/.config/zshrc/enable_vpn.sh'
 alias wallpaper='~/.config/zshrc/wallpaper.sh'
 
+# OneDrive
+alias osync='onedrive -s --single-directory "school"'
+
 # Replace cd
 alias j='z'
 alias jj='z -'
