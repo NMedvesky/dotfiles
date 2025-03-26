@@ -1,0 +1,138 @@
+[Icons]
+Theme=breeze-dark
+
+[KDE]
+widgetStyle=qt6ct-style
+contrast=4
+
+[ColorEffects:Disabled]
+Color=36, 39, 58
+ColorAmount=0.30000000000000004
+ColorEffect=2
+ContrastAmount=0.1
+ContrastEffect=0
+IntensityAmount=-1
+IntensityEffect=0
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=36, 39, 58
+ColorAmount=0.5
+ColorEffect=3
+ContrastAmount=0
+ContrastEffect=0
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=--accentColor
+BackgroundNormal=54, 58, 79
+DecorationFocus=--accentColor
+DecorationHover=54, 58, 79
+ForegroundActive=245, 169, 127
+ForegroundInactive=165, 173, 203
+ForegroundLink=--accentColor
+ForegroundNegative=237, 135, 150
+ForegroundNeutral=238, 212, 159
+ForegroundNormal=202, 211, 245
+ForegroundPositive=166, 218, 149
+ForegroundVisited=198, 160, 246
+
+
+[Colors:Complementary]
+BackgroundAlternate=24, 25, 38
+BackgroundNormal=30, 32, 48
+DecorationFocus=--accentColor
+DecorationHover=54, 58, 79
+ForegroundActive=245, 169, 127
+ForegroundInactive=165, 173, 203
+ForegroundLink=--accentColor
+ForegroundNegative=237, 135, 150
+ForegroundNeutral=238, 212, 159
+ForegroundNormal=202, 211, 245
+ForegroundPositive=166, 218, 149
+ForegroundVisited=198, 160, 246
+
+
+[Colors:Header]
+BackgroundAlternate=24, 25, 38
+BackgroundNormal=30, 32, 48
+DecorationFocus=--accentColor
+DecorationHover=54, 58, 79
+ForegroundActive=245, 169, 127
+ForegroundInactive=165, 173, 203
+ForegroundLink=--accentColor
+ForegroundNegative=237, 135, 150
+ForegroundNeutral=238, 212, 159
+ForegroundNormal=202, 211, 245
+ForegroundPositive=166, 218, 149
+ForegroundVisited=198, 160, 246
+
+
+[Colors:Selection]
+BackgroundAlternate=--accentColor
+BackgroundNormal=--accentColor
+DecorationFocus=--accentColor
+DecorationHover=54, 58, 79
+ForegroundLink=--accentColor
+ForegroundInactive=30, 32, 48
+ForegroundActive=245, 169, 127
+ForegroundLink=--accentColor
+ForegroundNegative=237, 135, 150
+ForegroundNeutral=238, 212, 159
+ForegroundNormal=24, 25, 38
+ForegroundPositive=166, 218, 149
+ForegroundVisited=198, 160, 246
+
+
+[Colors:Tooltip]
+BackgroundAlternate=27,25,35
+BackgroundNormal=36, 39, 58
+DecorationFocus=--accentColor
+DecorationHover=54, 58, 79
+ForegroundActive=245, 169, 127
+ForegroundInactive=165, 173, 203
+ForegroundLink=--accentColor
+ForegroundNegative=237, 135, 150
+ForegroundNeutral=238, 212, 159
+ForegroundNormal=202, 211, 245
+ForegroundPositive=166, 218, 149
+ForegroundVisited=198, 160, 246
+
+
+[Colors:View]
+BackgroundAlternate=30, 32, 48
+BackgroundNormal=36, 39, 58
+DecorationFocus=--accentColor
+DecorationHover=54, 58, 79
+ForegroundActive=245, 169, 127
+ForegroundInactive=165, 173, 203
+ForegroundLink=--accentColor
+ForegroundNegative=237, 135, 150
+ForegroundNeutral=238, 212, 159
+ForegroundNormal=202, 211, 245
+ForegroundPositive=166, 218, 149
+ForegroundVisited=198, 160, 246
+
+
+[Colors:Window]
+BackgroundAlternate=24, 25, 38
+BackgroundNormal=30, 32, 48
+DecorationFocus=--accentColor
+DecorationHover=54, 58, 79
+ForegroundActive=245, 169, 127
+ForegroundInactive=165, 173, 203
+ForegroundLink=--accentColor
+ForegroundNegative=237, 135, 150
+ForegroundNeutral=238, 212, 159
+ForegroundNormal=202, 211, 245
+ForegroundPositive=166, 218, 149
+ForegroundVisited=198, 160, 246
+
+
+[General]
+ColorScheme=Catppuccin--flavour--accentName
+Name=Catppuccin --flavour --accentName
+accentActiveTitlebar=false
+shadeSortColumn=true

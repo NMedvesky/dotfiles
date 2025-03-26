@@ -38,6 +38,6 @@ vim.opt.conceallevel = 0
 
 -- Auto unhide all folds
 vim.api.nvim_create_autocmd("Filetype", {
-	pattern = "*",
+	pattern = "norg",
     command = "norm zR"
 })
