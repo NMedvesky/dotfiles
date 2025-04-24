@@ -1,4 +1,4 @@
-M = {
+return {
     "epwalsh/obsidian.nvim",
     version = "*", -- recommended, use latest release instead of latest commit
     lazy = true,
@@ -24,13 +24,3 @@ M = {
         },
     },
 }
-
-vim.api.nvim_create_autocmd("Filetype", {
-	pattern = "markdown",
-	callback = function()
-        vim.opt.spell = true
-        vim.opt.conceallevel = 1
-	end,
-})
-
-return { M }

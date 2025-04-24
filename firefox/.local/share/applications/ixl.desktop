@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=IXL
+Comment="Website Shortcut"
+Exec=firefox https://www.ixl.com/signin/providencechs 
+Icon=firefox
+Terminal=false
+Type=Application

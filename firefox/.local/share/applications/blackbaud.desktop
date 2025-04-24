@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Blackbaud
+Comment="Website Shortcut"
+Exec=firefox https://providencecatholic.myschoolapp.com/
+Icon=firefox
+Terminal=false
+Type=Application

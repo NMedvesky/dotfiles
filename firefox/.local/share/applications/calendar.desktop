@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=PCHS Calender
+Comment="Website Shortcut"
+Exec=firefox https://www.providencecatholic.org/my-calendar/
+Icon=firefox
+Terminal=false
+Type=Application
