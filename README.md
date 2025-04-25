@@ -91,4 +91,6 @@
 ## conda
 - Mini version of Anaconda Python distribution
 - pacman (miniconda3)
-## tldreer
+## tealdeer
+- Rust tldr
+- yay
