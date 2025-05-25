@@ -1,6 +1,6 @@
 -- require("full-border"):setup()
 require("folder-rules"):setup()
-require("relative-motions"):setup({ show_numbers="relative", show_motion = true })
+-- require("relative-motions"):setup({ show_numbers="relative", show_motion = true })
 
 Header:children_add(function()
 	if ya.target_family() ~= "unix" then
