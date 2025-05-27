@@ -4,6 +4,9 @@ alias ls='eza --group-directories-first --icons=always'
 alias la='eza -a --group-directories-first --icons=always'
 alias ll='eza -ls modified --icons=always'
 
+# Bat
+alias cat='bat'
+
 # alias pwd='pwd && pwd | pbcopy'
 alias pwdc='pwd && pwd | clipse -a'
 
