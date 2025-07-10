@@ -26,6 +26,12 @@ M = {
             lspconfig.rust_analyzer.setup({
                 capabilities = capabilities,
             })
+            lspconfig.eslint.setup({
+                capabilities = capabilities,
+            })
+            lspconfig.gdscript.setup({
+                capabilities = capabilities,
+            })
         end,
     },
     {
