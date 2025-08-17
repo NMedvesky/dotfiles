@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=IXL
 Comment="Website Shortcut"
-Exec=firefox https://www.ixl.com/signin/providencechs 
-Icon=firefox
+Exec=zen-browser https://www.ixl.com/signin/providencechs 
+Icon=zen-browser
 Terminal=false
 Type=Application

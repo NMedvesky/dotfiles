@@ -14,7 +14,7 @@
 
 (deflayer ergo
   @lq  1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  caps q    @tw  @te  r    t    y    u    i    o    p    [    ]    \
+  caps q    @tw  @te  @tr  t    y    @tu  i    o    p    [    ]    \
   esc  @ta  @ts  @td  @tf  g    h    @tj  @tk  @tl  @trt bspc ret
  @hsft z    x    c    v    b    n    m    ,    .    /    rsft
   lctl lmet lalt           @tspc          ralt menu lrld
@@ -86,8 +86,12 @@
   tw (tap-hold $tt $ht w (layer-while-held function))
   te (tap-hold $tt $ht e (layer-while-held navigation))
 
-  tr (tap-hold $tt $ht r rsft)
-  tu (tap-hold $tt $ht u rsft)
+  ;; meh keys
+  tr (tap-hold $tt $ht r (multi ctl alt sft))
+  tu (tap-hold $tt $ht u (multi ctl alt sft))
+
+  ;; tr (tap-hold $tt $ht r rsft)
+  ;; tu (tap-hold $tt $ht u rsft)
 
   ta (tap-hold $tt $ht a lalt)
   ts (tap-hold $tt $ht s lmet)

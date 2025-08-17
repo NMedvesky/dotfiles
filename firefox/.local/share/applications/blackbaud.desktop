@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Blackbaud
 Comment="Website Shortcut"
-Exec=firefox https://providencecatholic.myschoolapp.com/
-Icon=firefox
+Exec=zen-browser https://providencecatholic.myschoolapp.com/
+Icon=zen-browser
 Terminal=false
 Type=Application
