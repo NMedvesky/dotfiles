@@ -8,6 +8,7 @@
 window#waybar {
     background: transparent;
     margin: 5px;
+    background: rgba(25, 28, 42, 0.9);
 }
 
 #custom-logo {
@@ -16,22 +17,22 @@ window#waybar {
 
 .modules-right {
     padding-left: 5px;
-    border-radius: 0 0 0 15px;
+    /* border-radius: 0 0 0 15px; */
     margin-top: 0px;
-    background: rgba(25, 28, 42, 0.8);
+    /* background: rgba(25, 28, 42, 0.8); */
 }
 
 .modules-center {
     padding: 0 15px;
     margin-top: 0px;
-    border-radius: 0 0 15px 15px;
-    background: rgba(25, 28, 42, 0.8);
+    /* border-radius: 0 0 15px 15px; */
+    /* background: rgba(25, 28, 42, 0.8); */
 }
 
 .modules-left {
-    border-radius: 0 0 15px 0;
+    /* border-radius: 0 0 15px 0; */
     margin-top: 0px;
-    background: rgba(25, 28, 42, 0.8);
+    /* background: rgba(25, 28, 42, 0.8); */
 }
 
 #battery,

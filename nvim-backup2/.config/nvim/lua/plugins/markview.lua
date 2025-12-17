@@ -16,6 +16,9 @@ return {
             markdown = {
                 headings = presets.headings.glow,
             },
+            experimental = {
+                check_rtp_message = false,
+            }
         })
     end,
 }

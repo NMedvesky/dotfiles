@@ -15,3 +15,4 @@ zoxide init fish | source
 fish_add_path "/home/niko/.cargo/bin"
 
 source ~/.config/fish/alias.fish
+

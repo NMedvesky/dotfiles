@@ -3,5 +3,5 @@ run = 'nvim "$0"'
 block = true
 for = "unix"
 
-[mgr]
+[manager]
 show_hidden = true
