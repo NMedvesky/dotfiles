@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "hideWidget": {
+      "label": "更新 0 件で非表示",
+      "desc": "利用可能な更新数が 0 の場合にウィジェットを非表示にします。"
+    },
+    "currentIconName": {
+      "label": "アイコン識別子",
+      "desc": "現在設定されているアイコン名です。"
+    },
+    "changeIcon": {
+      "label": "アイコンを選択"
+    },
+    "terminal": {
+      "label": "ターミナルエミュレーター",
+      "desc": "システム更新コマンドを実行するためのターミナルコマンド。任意: 更新コマンド用に {} を使用します。",
+      "placeholder": "例: foot -e, hyprctl dispatch exec '[float] kitty -e {}'"
+    },
+    "customCmdGetNumUpdates": {
+      "label": "更新件数のカスタムコマンド",
+      "desc": "利用可能な更新数を表す整数を 1 つ出力する必要があります。",
+      "placeholder": "例: yay -Quq 2>/dev/null | wc -l"
+    },
+    "customCmdDoSystemUpdate": {
+      "label": "システム更新のカスタムコマンド",
+      "desc": "システム更新を実行するためのシェルコマンドです。",
+      "placeholder": "例: yay -Syu"
+    },
+    "updateInterval": {
+      "label": "更新チェック間隔",
+      "desc": "更新チェックのポーリング間隔"
+    },
+    "currentCommands": {
+      "label": "現在の設定コマンド"
+    },
+    "currentNumUpdatesCmd": {
+      "label": "更新件数"
+    },
+    "currentUpdateCmd": {
+      "label": "システム更新"
+    }
+  },
+  "tooltip": {
+    "updatesAvailable": "クリックして設定済みのシステム更新コマンドを実行",
+    "noUpdatesAvailable": "更新は検出されませんでした"
+  }
+}

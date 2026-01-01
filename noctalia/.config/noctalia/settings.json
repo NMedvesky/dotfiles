@@ -93,7 +93,7 @@
                     "colorizeIcons": false,
                     "hideMode": "hidden",
                     "id": "ActiveWindow",
-                    "maxWidth": 200,
+                    "maxWidth": 250,
                     "scrollingMode": "hover",
                     "showIcon": true,
                     "useFixedWidth": false
@@ -102,7 +102,7 @@
                     "hideMode": "hidden",
                     "hideWhenIdle": false,
                     "id": "MediaMini",
-                    "maxWidth": 200,
+                    "maxWidth": 250,
                     "scrollingMode": "hover",
                     "showAlbumArt": false,
                     "showArtistFirst": true,
@@ -113,6 +113,9 @@
                 }
             ],
             "right": [
+                {
+                    "id": "plugin:catwalk"
+                },
                 {
                     "blacklist": [
                     ],
@@ -125,6 +128,12 @@
                 },
                 {
                     "id": "ScreenRecorder"
+                },
+                {
+                    "id": "plugin:privacy-indicator"
+                },
+                {
+                    "id": "plugin:mini-docker"
                 },
                 {
                     "diskPath": "/",
@@ -147,9 +156,8 @@
                     "id": "Bluetooth"
                 },
                 {
-                    "hideWhenZero": true,
-                    "id": "NotificationHistory",
-                    "showUnreadBadge": true
+                    "displayMode": "alwaysShow",
+                    "id": "Volume"
                 },
                 {
                     "deviceNativePath": "",
@@ -160,8 +168,9 @@
                     "warningThreshold": 30
                 },
                 {
-                    "displayMode": "alwaysShow",
-                    "id": "Volume"
+                    "hideWhenZero": true,
+                    "id": "NotificationHistory",
+                    "showUnreadBadge": true
                 },
                 {
                     "colorizeDistroLogo": false,
@@ -237,7 +246,7 @@
                 "id": "media-sysmon-card"
             }
         ],
-        "position": "close_to_bar_button",
+        "position": "top_right",
         "shortcuts": {
             "left": [
                 {
@@ -351,10 +360,10 @@
         "forced": false,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
-        "nightTemp": "4000"
+        "nightTemp": "4431"
     },
     "notifications": {
-        "backgroundOpacity": 1,
+        "backgroundOpacity": 0.8,
         "criticalUrgencyDuration": 15,
         "enableKeyboardLayoutToast": true,
         "enabled": true,
@@ -362,7 +371,7 @@
         "lowUrgencyDuration": 3,
         "monitors": [
         ],
-        "normalUrgencyDuration": 8,
+        "normalUrgencyDuration": 5,
         "overlayLayer": true,
         "respectExpireTimeout": false,
         "sounds": {
@@ -383,7 +392,8 @@
             0,
             1,
             2,
-            4
+            4,
+            3
         ],
         "location": "top_right",
         "monitors": [
@@ -459,11 +469,11 @@
         "gpuCriticalThreshold": 90,
         "gpuPollingInterval": 3000,
         "gpuWarningThreshold": 80,
-        "memCriticalThreshold": 90,
+        "memCriticalThreshold": 95,
         "memPollingInterval": 3000,
         "memWarningThreshold": 80,
         "networkPollingInterval": 3000,
-        "tempCriticalThreshold": 90,
+        "tempCriticalThreshold": 80,
         "tempPollingInterval": 3000,
         "tempWarningThreshold": 80,
         "useCustomColors": false,

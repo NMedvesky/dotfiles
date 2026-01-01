@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "hideWidget": {
+      "label": "Verbergen bij 0 updates",
+      "desc": "Verbergt de widget wanneer het aantal beschikbare updates 0 is."
+    },
+    "currentIconName": {
+      "label": "Pictogram-ID",
+      "desc": "Huidig geconfigureerde pictogramnaam."
+    },
+    "changeIcon": {
+      "label": "Pictogram kiezen"
+    },
+    "terminal": {
+      "label": "Terminalemulator",
+      "desc": "Terminalcommando om het systeemupdatecommando uit te voeren. Optioneel: {} voor het updatecommando.",
+      "placeholder": "bijv. foot -e, hyprctl dispatch exec '[float] kitty -e {}'"
+    },
+    "customCmdGetNumUpdates": {
+      "label": "Aangepast commando voor update-aantal",
+      "desc": "Shell-commando dat één geheel getal moet uitvoereren met het aantal beschikbare updates.",
+      "placeholder": "bijv. yay -Quq 2>/dev/null | wc -l"
+    },
+    "customCmdDoSystemUpdate": {
+      "label": "Aangepast systeemupdatecommando",
+      "desc": "Shell-commando om de systeemupdate uit te voeren.",
+      "placeholder": "bijv. yay -Syu"
+    },
+    "updateInterval": {
+      "label": "Controle-interval",
+      "desc": "Poll-interval voor updatecontroles"
+    },
+    "currentCommands": {
+      "label": "Huidig geconfigureerde commando’s"
+    },
+    "currentNumUpdatesCmd": {
+      "label": "Update-aantal"
+    },
+    "currentUpdateCmd": {
+      "label": "Systeemupdate"
+    }
+  },
+  "tooltip": {
+    "updatesAvailable": "Klik om het geconfigureerde systeemupdatecommando uit te voeren",
+    "noUpdatesAvailable": "Geen updates gevonden"
+  }
+}

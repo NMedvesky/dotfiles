@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "hideWidget": {
+      "label": "Masquer si 0 mise à jour",
+      "desc": "Masque le widget lorsque le nombre de mises à jour disponibles est 0."
+    },
+    "currentIconName": {
+      "label": "Identifiant d’icône",
+      "desc": "Nom d’icône actuellement configuré."
+    },
+    "changeIcon": {
+      "label": "Choisir l’icône"
+    },
+    "terminal": {
+      "label": "Émulateur de terminal",
+      "desc": "Commande du terminal utilisée pour exécuter la commande de mise à jour du système. Optionnel : {} pour la commande de mise à jour.",
+      "placeholder": "ex. foot -e, hyprctl dispatch exec '[float] kitty -e {}'"
+    },
+    "customCmdGetNumUpdates": {
+      "label": "Commande personnalisée de comptage",
+      "desc": "Commande shell devant afficher un seul entier correspondant au nombre de mises à jour disponibles.",
+      "placeholder": "ex. yay -Quq 2>/dev/null | wc -l"
+    },
+    "customCmdDoSystemUpdate": {
+      "label": "Commande personnalisée de mise à jour",
+      "desc": "Commande shell utilisée pour effectuer la mise à jour du système.",
+      "placeholder": "ex. yay -Syu"
+    },
+    "updateInterval": {
+      "label": "Intervalle de vérification",
+      "desc": "Intervalle de sondage pour les vérifications de mises à jour"
+    },
+    "currentCommands": {
+      "label": "Commandes actuellement configurées"
+    },
+    "currentNumUpdatesCmd": {
+      "label": "Nombre de mises à jour"
+    },
+    "currentUpdateCmd": {
+      "label": "Mise à jour système"
+    }
+  },
+  "tooltip": {
+    "updatesAvailable": "Cliquer pour exécuter la commande de mise à jour système configurée",
+    "noUpdatesAvailable": "Aucune mise à jour détectée"
+  }
+}

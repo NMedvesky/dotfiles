@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "hideWidget": {
+      "label": "0 güncellemede gizle",
+      "desc": "Mevcut güncelleme sayısı 0 olduğunda widget'ı gizler."
+    },
+    "currentIconName": {
+      "label": "Simge tanımlayıcı",
+      "desc": "Şu anda yapılandırılmış simge adı."
+    },
+    "changeIcon": {
+      "label": "Simge seç"
+    },
+    "terminal": {
+      "label": "Terminal emülatörü",
+      "desc": "Sistem güncelleme komutunu çalıştırmak için kullanılan terminal komutu. İsteğe bağlı: güncelleme komutu için {}.",
+      "placeholder": "örn., foot -e, hyprctl dispatch exec '[float] kitty -e {}'"
+    },
+    "customCmdGetNumUpdates": {
+      "label": "Özel güncelleme sayısı komutu",
+      "desc": "Mevcut güncellemelerin sayısını temsil eden tek bir tamsayı çıktılaması gereken kabuk komutu.",
+      "placeholder": "örn., yay -Quq 2>/dev/null | wc -l"
+    },
+    "customCmdDoSystemUpdate": {
+      "label": "Özel sistem güncelleme komutu",
+      "desc": "Sistem güncellemesini gerçekleştirmek için kullanılan kabuk komutu.",
+      "placeholder": "örn., yay -Syu"
+    },
+    "updateInterval": {
+      "label": "Güncelleme denetim aralığı",
+      "desc": "Güncelleme denetimleri için yoklama aralığı"
+    },
+    "currentCommands": {
+      "label": "Şu anda yapılandırılmış komutlar"
+    },
+    "currentNumUpdatesCmd": {
+      "label": "Güncelleme sayısı"
+    },
+    "currentUpdateCmd": {
+      "label": "Sistem güncellemesi"
+    }
+  },
+  "tooltip": {
+    "updatesAvailable": "Yapılandırılmış sistem güncelleme komutunu çalıştırmak için tıklayın",
+    "noUpdatesAvailable": "Güncelleme algılanmadı"
+  }
+}

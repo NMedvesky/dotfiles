@@ -1,0 +1,8 @@
+{
+  "updateIntervalMinutes": 30,
+  "updateTerminalCommand": "foot -e",
+  "currentIconName": "package",
+  "hideOnZero": true,
+  "customCmdGetNumUpdates": "checkupdates | wc -l",
+  "customCmdDoSystemUpdate": "sudo pacman -Syu"
+}
